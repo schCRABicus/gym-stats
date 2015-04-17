@@ -1,0 +1,22 @@
+default:
+  description: 'Default (production) build'
+  tasks:
+    - prod
+dev:
+  description: 'Development build'
+  tasks:
+    - 'concurrent:devFirst'
+    - 'concurrent:devSecond'
+lessdev:
+  description: 'Less dev task'
+  tasks:
+    - 'less:dev'
+lessprod:
+  description: 'Less prod task'
+  tasks:
+    - 'less:prod'
+prod:
+  description: 'Production build'
+  tasks:
+    - 'concurrent:prodFirst'
+    - 'concurrent:prodSecond'
