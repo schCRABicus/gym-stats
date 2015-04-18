@@ -2,62 +2,43 @@ body {
   font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 100;
   background: url('../images/sprinkles.png') repeat;
-  padding: 5%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  padding: 2% 5%;
 }
-.container,
-header,
 nav {
-  width: 100%;
-}
-.container {
-  height: 100%;
-}
-a {
-  color: #00B7FF;
-}
-header {
-  height: 35%;
-}
-header h1 {
-  font-weight: 100;
-  font-size: 5em;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  margin: 0;
-}
-.panels {
-  height: 65%;
+  float: right;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
 }
-.panel {
-  width: 49%;
-  text-align: left;
-  color: #fff;
-  font-size: 2em;
-  margin: 0.5%;
-  cursor: pointer;
+nav a {
+  padding: 1em;
+  color: #000;
+  font-size: 1.5em;
+  text-decoration: none;
+  border-bottom: 1px dotted #aaaaaa;
 }
-.panel:hover {
-  border: 1px solid #fff;
+nav a:last-child {
+  border-bottom: none;
 }
-.orange {
-  background-color: #F39C12;
+nav a:hover {
+  color: #00b7ff;
+  border-bottom: 1px dotted #00b7ff;
 }
-.green {
-  background-color: #16A085;
+nav a.active {
+  color: #ff6b00;
+  border-bottom: 1px dotted #ff6b00;
 }
-.blue {
-  background-color: #3498DB;
-}
-.red {
-  background-color: #AC193D;
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+  nav a {
+    padding: .2em 1em;
+    border-bottom: none;
+    border-left: 1px dotted #aaaaaa;
+  }
+  nav a:first-child {
+    border-left: none;
+  }
 }

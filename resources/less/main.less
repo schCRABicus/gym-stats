@@ -1,73 +1,10 @@
+@import "variables";
+
 body {
   font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-weight: 100;
   background: url('../images/sprinkles.png') repeat;
-  padding: 5%;
-
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  padding: 2% 5%;
 }
 
-.container, header, nav {
-  width: 100%;
-}
-
-.container {
-  height: 100%;
-}
-
-a {
-  color: #00B7FF;
-}
-
-header {
-  height: 35%;
-
-  h1 {
-    font-weight: 100;
-    font-size: 5em;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    margin: 0;
-  }
-}
-
-.panels {
-  height: 65%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.panel {
-  width: 49%;
-  text-align: left;
-  color: #fff;
-  font-size: 2em;
-  margin: 0.5%;
-  cursor: pointer;
-
-  &:hover {
-    border: 1px solid #fff;
-  }
-}
-
-.orange {
-  background-color: #F39C12;
-}
-
-.green {
-  background-color: #16A085;
-}
-
-.blue {
-  background-color: #3498DB;
-}
-
-.red {
-  background-color: #AC193D;
-}
+@import "nav";

@@ -1,8 +1,7 @@
 extends layout
 
 block content
-  nav(class='panels')
-    div(class='panel orange') info
-    div(class='panel green') About
-    div(class='panel red') Log in
-    div(class='panel blue') Register
+  nav
+    a(href='/about' class='active') About
+    a(href='/signin') Sign in
+    a(href='/register') Register
